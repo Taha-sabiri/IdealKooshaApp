@@ -67,7 +67,7 @@ export default function Home() {
       </div>
 
       {/* sec3 - Chart */}
-      <div className='md:px-[19svw] px-[15svw] py-30  text-center'>
+      <div className='px-[13svw]  py-30  text-center'>
         <h1 className=' text-3xl text-koosha-pr font-bold'>مقایسه بازدهی بازار‌های مختلف در ۵ سال اخیر</h1>
 
         <div className=' flex gap-2 mt-11 mb-4'>

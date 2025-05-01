@@ -22,7 +22,7 @@ export default function Header() {
 
     return (
         <header
-            className={`sticky top-0 z-50 p-[28px]  flex items-center justify-around transition-colors duration-300 ${isSticky ? 'bg-[#7a1849]' : 'bg-[#7a1849]'
+            className={`sticky -mt-[10svh] top-0 z-50 p-[28px]  flex items-center justify-around transition-colors duration-300 ${isSticky ? 'bg-[#7a1849]' : 'bg-transp7a1849arent'
                 }`}
         >
             <div className=' flex items-center '>
