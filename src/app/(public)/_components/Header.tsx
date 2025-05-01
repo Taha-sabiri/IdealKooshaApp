@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Header() {
 
-    const [isSticky, setIsSticky] = useState<Boolean>(false);
+    const [isSticky, setIsSticky] = useState<boolean>(false);
 
     useEffect(() => {
         const handleScroll = () => {
