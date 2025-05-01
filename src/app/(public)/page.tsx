@@ -42,11 +42,11 @@ export default function Home() {
 
   return (
     <div
-      className="  relative z-10"
+      className="  relative "
 
     >
       {/* slider */}
-      <div className="bg-koosha-pr w-full  " >
+      <div className="bg-koosha-pr  w-full  " >
         <Image
           src={slider}
           alt="Sample Image"
