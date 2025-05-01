@@ -6,9 +6,6 @@ import Image from 'next/image';
 import { ServiceItem } from './_components/ServiceItem';
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts"
 import shape from '@/assets/images/shape.png';
-
-
-
 import {
   ChartConfig,
   ChartContainer,
@@ -42,16 +39,16 @@ export default function Home() {
 
   return (
     <div
-      className="  relative "
+      className="  relative z-10"
 
     >
       {/* slider */}
-      <div className="bg-koosha-pr  w-full  " >
+      <div className="bg-koosha-pr w-full  " >
         <Image
           src={slider}
           alt="Sample Image"
 
-          className='ml-24'
+          className=''
         />
       </div>
 
@@ -70,10 +67,10 @@ export default function Home() {
       </div>
 
       {/* sec3 - Chart */}
-      <div className='px-[19svw] py-30 text-center'>
+      <div className='md:px-[19svw] px-[15svw] py-30  text-center'>
         <h1 className=' text-3xl text-koosha-pr font-bold'>مقایسه بازدهی بازار‌های مختلف در ۵ سال اخیر</h1>
 
-        <div className=' flex gap-2 mt-11'>
+        <div className=' flex gap-2 mt-11 mb-4'>
           <div className='bg-green-400 text-white rounded-2xl p-3'> بورس</div>
           <div className='bg-koosha-pr text-white rounded-2xl p-3'> سپرده بانکی</div>
           <div className='bg-yellow-500 text-white rounded-2xl p-3'> ارز</div>
@@ -166,7 +163,7 @@ export default function Home() {
 
       {/* sec4 - slong */}
 
-      <div className=' flex justify-center items-center min-h-[20svh] w-full p-5 mb-24' >
+      <div className=' flex justify-center items-center md:min-h-[20svh] min-h-[10svh] w-full p-5 mb-24' >
         <Image
           src={shape}
           alt="Sample Image"
@@ -183,7 +180,7 @@ export default function Home() {
       </div>
 
       {/* sec4 - samane */}
-      <div className=' flex flex-col items-center h-[80svh] w-full  bg-koosha-pr'>
+      <div className='  flex-col items-center h-[80svh] w-full  bg-koosha-pr hidden md:flex'>
 
         <div className=' border-b h-[25svh] border-white/50 w-full  flex'>
 

@@ -44,7 +44,7 @@ export default function Header() {
                 </ul>
             </div>
             <div className=' flex gap-2.5 items-center '>
-                <div className=' flex justify-center items-center gap-1'>
+                <div className=' flex justify-center items-center gap-1  not-md:hidden'>
                     <span className=' text-white'>021-92005220</span>
                     <Image
                         src={Phone}
