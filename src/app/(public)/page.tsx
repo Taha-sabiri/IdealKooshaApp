@@ -46,7 +46,7 @@ export default function Home() {
 
     >
       {/* slider */}
-      <div className="bg-red-600 w-full  " >
+      <div className="bg-koosha-pr w-full  " >
         <Image
           src={slider}
           alt="Sample Image"
