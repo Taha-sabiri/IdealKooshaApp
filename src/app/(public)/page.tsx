@@ -43,22 +43,22 @@ export default function Home() {
 
     >
       {/* slider */}
-      <div className="bg-koosha-pr w-full  " >
+      <div className="bg-koosha-pr w-full relative h-[80svh] " >
         <Image
           src={slider}
           alt="Sample Image"
-
-          className=''
+          fill
+          className='object-cover '
         />
       </div>
 
       {/* sec2 */}
 
-      <div className='grid grid-cols-1  lg:grid-cols-2 min-h-[80svh]  '>
+      <div className='grid grid-cols-1  grid-rows-4 md:grid-cols-2 md:grid-rows-2  min-h-[80svh]  '>
         <ServiceItem titr='همراهی اختصاصی' title='در کارگزاری ایده آل، با سرویس همراهی اختصاصی شما یک اکانت منیجر اختصاصی خواهید داشت که در هر لحظه در کنار شماست. این متخصص حرفه‌ای با دانش بازار و تجربه بالا، شما را در هر مرحله از تصمیم‌گیری‌های مالی همراهی می‌کند تا مطمئن باشید که تصمیمات شما همواره درست و آگاهانه است. هدف ما ایجاد تجربه‌ای مطمئن و اختصاصی برای هر مشتری است.' />
         <ServiceItem titr='مشاوره رایگان' title='در کارگزاری ایده آل، ما ارزش همراهی و حمایت را به خوبی درک می‌کنیم. به همین دلیل، مشاوره رایگان برای تمامی مشتریان جدید فراهم کرده‌ایم. تیم متخصصان ما آماده‌اند تا با ارائه راهنمایی‌های دقیق و شخصی‌سازی شده، شما را در مسیر سرمایه‌گذاری موفق همراهی کنند. با ارسال درخواست مشاوره و اولین قدم خود را با اطمینان بردارید.' />
         <ServiceItem titr='آموزش حرفه‌ای بورس' title='در کارگزاری ایده آل، ما به اهمیت آموزش در سرمایه‌گذاری آگاهانه باور داریم. به همین دلیل، آموزش حرفه‌ای بورس را به صورت آنلاین ارائه می‌دهیم تا شما بتوانید از هر کجا و در هر زمانی به دانش و مهارت‌های لازم برای موفقیت در بازار بورس دسترسی داشته باشید. دوره‌های ما توسط اساتید مجرب طراحی شده و تمامی جنبه‌های سرمایه‌گذاری را پوشش می‌دهند.' />
-        <div className='border-b border-r w-full border-koosha-pr   p-30  gap-3 flex flex-col  '>
+        <div className='border-b border-r w-full border-koosha-pr   p-15 md:p-30   gap-3 flex flex-col  '>
           <div className=' flex h-full flex-col justify-center items-center text-balance gap-3 '>
             <h1 className='text-gray-400 text-3xl font-bold text-wrap whitespace-normal'>از آموزش تا معامله <br /><span className=' text-koosha-pr'>همراهتان هستیــم </span></h1>
             <Button variant={"outline"} className=' text-koosha-pr border-koosha-pr! bg-transparent! hover:bg-koosha-pr! hover:text-white '>ماموریت ایده‌آل</Button>
@@ -71,10 +71,10 @@ export default function Home() {
         <h1 className=' text-3xl text-koosha-pr font-bold'>مقایسه بازدهی بازار‌های مختلف در ۵ سال اخیر</h1>
 
         <div className=' flex gap-2 mt-11 mb-4'>
-          <div className='bg-green-400 text-white rounded-2xl p-3'> بورس</div>
-          <div className='bg-koosha-pr text-white rounded-2xl p-3'> سپرده بانکی</div>
-          <div className='bg-yellow-500 text-white rounded-2xl p-3'> ارز</div>
-          <div className='bg-blue-500 text-white rounded-2xl p-3'> مسکن</div>
+          <div className='bg-green-400 text-white rounded-2xl p-3 md:text-base text-xs'> بورس</div>
+          <div className='bg-koosha-pr text-white rounded-2xl p-3 md:text-base text-xs'> سپرده بانکی</div>
+          <div className='bg-yellow-500 text-white rounded-2xl p-3 md:text-base text-xs'> ارز</div>
+          <div className='bg-blue-500 text-white rounded-2xl p-3 md:text-base text-xs'> مسکن</div>
         </div>
         <ChartContainer config={chartConfig} >
           <AreaChart
@@ -163,14 +163,14 @@ export default function Home() {
 
       {/* sec4 - slong */}
 
-      <div className=' flex justify-center items-center md:min-h-[20svh] min-h-[10svh] w-full p-5 mb-24' >
+      <div className=' flex justify-center items-center md:min-h-[20svh] min-h-[10svh] w-full p-5 mb-24 text-center' >
         <Image
           src={shape}
           alt="Sample Image"
           width={31}
           className=''
         />
-        <h1 className='text-gray-400 text-3xl md:text-4xl font-bold'>سرمایه‌گذاری در بورس، <span className='text-koosha-pr'>ایده‌آل</span> است</h1>
+        <h1 className='text-gray-400 text-3xl md:text-4xl font-bold text-center'>سرمایه‌گذاری در بورس، <span className='text-koosha-pr'>ایده‌آل</span> است</h1>
         <Image
           src={shape}
           alt="Sample Image"

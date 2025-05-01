@@ -9,7 +9,7 @@ type ServiceItemProps = {
   
 
 export const ServiceItem =({titr , title}:ServiceItemProps) =>{
-    return <div className='border-b border-r w-full border-koosha-pr  p-20 md:p-30   '>
+    return <div className='border-b border-r w-full border-koosha-pr  p-15 md:p-30   '>
       <div className=' flex flex-col justify-center items-start text-balance gap-3 '>
         <h1 className='text-koosha-pr text-xl font-bold'>{titr}</h1>
         <p className=' text-wrap '>{title}</p>
