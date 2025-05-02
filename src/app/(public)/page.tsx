@@ -218,7 +218,7 @@ export default function Home() {
 
           <div className=' flex flex-col gap-3 justify-center items-start px-52'>
             <h1 className=' text-white font-bold text-2xl'>سامانه‌های معاملاتی  بر خط ایده‌آل</h1>
-            <p className=' text-white text-xs mb-5'>در کارگزاری ایده آل، با سرویس همراهی اختصاصی شما یک اکانت منیجر اختصاصی خواهید داشت که در هر لحظه در کنار شماست. این متخصص حرفه‌ای با دانش بازار و تجربه بالا، شما را در هر مرحله از تصمیم‌گیری‌های مالی همراهی می‌کند تا مطمئن باشید که تصمیمات شما همواره درست و آگاهانه است. هدف ما ایجاد تجربه‌ای مطمئن و اختصاصی برای هر مشتری است.</p>
+            <p className=' text-white text-base mb-5'>در کارگزاری ایده آل، با سرویس همراهی اختصاصی شما یک اکانت منیجر اختصاصی خواهید داشت که در هر لحظه در کنار شماست. این متخصص حرفه‌ای با دانش بازار و تجربه بالا، شما را در هر مرحله از تصمیم‌گیری‌های مالی همراهی می‌کند تا مطمئن باشید که تصمیمات شما همواره درست و آگاهانه است. هدف ما ایجاد تجربه‌ای مطمئن و اختصاصی برای هر مشتری است.</p>
             <Button variant="outline" className='text-white hover:text-white bg-transparent! hover:bg-accent/50!  self-end ' onClick={() => { }} >اطلاعات بیشتر</Button>
 
           </div>
@@ -286,7 +286,7 @@ export default function Home() {
                 fill
                 className="object-cover grayscale-100 hover:grayscale-0 duration-300 transition-all"
               />
-              <div className='absolute bottom-0 left-0 w-full p-3 bg-koosha-pr text-white'>
+              <div className='absolute bottom-0 left-0 w-full p-3 bg-gray-600 text-white'>
                 <p>رشد سهم های DPS محور در شش ماهه دوم سال ۱۴۰۳</p>
               </div>
 
@@ -310,7 +310,7 @@ export default function Home() {
                 fill
                 className="object-cover grayscale-100 hover:grayscale-0 duration-300 transition-all"
               />
-              <div className='absolute bottom-0 left-0 w-full p-3 bg-koosha-pr text-white'>
+              <div className='absolute bottom-0 left-0 w-full p-3 bg-gray-600 text-white'>
                 <p>رشد سهم های DPS محور در شش ماهه دوم سال ۱۴۰۳</p>
               </div>
 
@@ -347,7 +347,7 @@ export default function Home() {
                 fill
                 className="object-cover grayscale-100 hover:grayscale-0 duration-300 transition-all"
               />
-              <div className='absolute bottom-0 left-0 w-full p-3 bg-koosha-pr text-white'>
+              <div className='absolute bottom-0 left-0 w-full p-3 bg-gray-600 text-white'>
                 <p>رشد سهم های DPS محور در شش ماهه دوم سال ۱۴۰۳</p>
               </div>
 
