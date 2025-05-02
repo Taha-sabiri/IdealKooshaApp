@@ -23,8 +23,8 @@ import 'swiper/css/pagination';
 
 import 'swiper/css/navigation';
 // import required modules
-import { Navigation, Pagination } from 'swiper/modules';
-import { ArrowLeftIcon, ArrowRightIcon, AxeIcon } from 'lucide-react';
+import { Navigation } from 'swiper/modules';
+import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react';
 
 export default function Home() {
 
