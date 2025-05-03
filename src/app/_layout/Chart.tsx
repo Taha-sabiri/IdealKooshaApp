@@ -41,7 +41,7 @@ export const Chart = ({ chartData }: ChartProps) => {
             <div className='bg-yellow-500 text-white rounded-2xl p-3 md:text-base text-xs'> ارز</div>
             <div className='bg-blue-500 text-white rounded-2xl p-3 md:text-base text-xs'> مسکن</div>
         </div>
-        <ChartContainer config={chartConfig} style={{ height: 500, width: '100%' }}>
+        <ChartContainer config={chartConfig} className="h-[300px] md:h-[600px] w-full">
             <AreaChart
                 accessibilityLayer
                 data={chartData}

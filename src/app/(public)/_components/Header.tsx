@@ -64,7 +64,7 @@ export default function Header() {
                         className=''
                     />
                 </Button>
-                <Button variant="outline" className='text-white hover:text-white bg-transparent! hover:bg-accent/50!  ' onClick={() => { }} >ورود و افتتاح حساب</Button>
+                <Button variant="outline" className='text-white hover:text-white bg-transparent! hover:bg-accent/50! md:text-base  text-xs ' onClick={() => { }} >ورود و افتتاح حساب</Button>
 
 
             </div>
