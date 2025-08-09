@@ -15,13 +15,13 @@ export default function AboutUs() {
                 <div className=" h-full  flex w-full">
                 </div>
             </div>
-            <div className="text-2xl h-[47.5svh] py-4 md:py-0 border-b border-koosha-pr flex  md:flex-row justify-center items-center px-[13svw] flex-col-reverse j  ">
+            <div className="text-2xl h-[70svh] gap-2 md:h-[47.5svh] py-4 md:py-0 border-b border-koosha-pr flex  md:flex-row justify-center items-center px-[13svw] flex-col-reverse j  ">
                 <div className="border-none md:border-l border-koosha-pr h-full  flex w-full items-center justify-center ">
-                    <p className="text-sm w-[90%] text-center md:text-right  ">در کارگزاری ایده آل، با سرویس همراهی اختصاصی شما یک اکانت منیجر اختصاصی خواهید داشت که در هر لحظه در کنار شماست. این متخصص حرفه‌ای با دانش بازار و تجربه بالا، شما را در هر مرحله از تصمیم‌گیری‌های مالی همراهی می‌کند تا مطمئن باشید که تصمیمات شما همواره درست و آگاهانه است. هدف ما ایجاد تجربه‌ای مطمئن و اختصاصی برای هر مشتری است.
+                    <p className="text-sm w-[90%]  md:text-right text-justify  ">در کارگزاری ایده آل، با سرویس همراهی اختصاصی شما یک اکانت منیجر اختصاصی خواهید داشت که در هر لحظه در کنار شماست. این متخصص حرفه‌ای با دانش بازار و تجربه بالا، شما را در هر مرحله از تصمیم‌گیری‌های مالی همراهی می‌کند تا مطمئن باشید که تصمیمات شما همواره درست و آگاهانه است. هدف ما ایجاد تجربه‌ای مطمئن و اختصاصی برای هر مشتری است.
 
                         در کارگزاری ایده آل، با سرویس همراهی اختصاصی شما یک اکانت منیجر اختصاصی خواهید داشت که در هر لحظه در کنار شماست. این متخصص حرفه‌ای با دانش بازار و تجربه بالا، شما را در هر مرحله از تصمیم‌گیری‌های مالی همراهی می‌کند تا مطمئن باشید که تصمیمات شما همواره درست و آگاهانه است. هدف ما ایجاد تجربه‌ای مطمئن و اختصاصی برای هر مشتری است.</p>
                 </div>
-                <div className=" h-full  flex w-full relative  border-r  border-koosha-pr" >
+                <div className=" h-full  flex w-full relative  md:border-r  border-koosha-pr" >
                     <Image src={about} alt="" fill className="w-auto h-fit object-cover" />
                 </div>
             </div>
