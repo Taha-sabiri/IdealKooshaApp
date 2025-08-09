@@ -1,7 +1,4 @@
 import Image from "next/image";
-import about from '@/assets/images/about.png'
-import boss from '@/assets/images/boss.png'
-import email from '@/assets/images/.png'
 import map from '@/assets/images/map.png'
 import Phone from '@/assets/images/icon/Phone.svg'
 import call from '@/assets/images/call.png'
