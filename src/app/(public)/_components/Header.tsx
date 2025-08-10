@@ -40,6 +40,7 @@ export default function Header() {
         >
             <div className=' flex items-center '>
                 <Image
+                onClick={()=>router.push('/')}
                     src={logo}
                     alt="Sample Image"
                     width={99}
@@ -48,6 +49,7 @@ export default function Header() {
                 />
 
                 <ul className='text-white flex gap-5 text-xs lg:text-base not-md:hidden '>
+                    <li onClick={() => router.push("/")}>صفحه اصلی</li>
                     <li>معاملات</li>
                     <li>سامانه‌های آنلاین</li>
                     <li>آکادمی ایده‌آل</li>
@@ -89,6 +91,11 @@ export default function Header() {
                             <DrawerDescription>منوی سایت</DrawerDescription>
                         </DrawerHeader>
                         <ul className='text-black flex text  flex-col gap-5 px-3 lg:text-base mt-5 '>
+
+                            <DrawerClose asChild>
+                                <li onClick={() => router.push("/")}>صفحه اصلی</li>
+                            </DrawerClose>
+                            <Separator className="" />
                             <li>معاملات</li>
                             <Separator className="" />
                             <li>سامانه‌های آنلاین</li>
