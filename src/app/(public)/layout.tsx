@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import localFont from 'next/font/local'
 import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 
 
 const abbar = localFont({
@@ -48,6 +49,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );
