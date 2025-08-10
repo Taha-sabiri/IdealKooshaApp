@@ -6,8 +6,22 @@ import logo from '@/assets/images/logo.svg';
 import MagnifyingGlass from '@/assets/images/icon/MagnifyingGlass.svg'
 import Phone from '@/assets/images/icon/Phone.svg'
 import { Button } from '@/components/ui/button';
+import {
+    Drawer,
+    DrawerClose,
+    DrawerContent,
+    DrawerDescription,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerTitle,
+    DrawerTrigger,
+} from "@/components/ui/drawer"
+import { Separator } from "@/components/ui/separator"
+import { useRouter } from "next/navigation";
+
 
 export default function Header() {
+    const router = useRouter();
 
     const [isSticky, setIsSticky] = useState<boolean>(false);
 
@@ -39,8 +53,8 @@ export default function Header() {
                     <li>سامانه‌های آنلاین</li>
                     <li>آکادمی ایده‌آل</li>
                     <li>اخبار و رسانه</li>
-                    <li>درباره ما</li>
-                    <li>ارتباط با ما</li>
+                    <li onClick={() => router.push("/about-us")}>درباره ما</li>
+                    <li onClick={() => router.push("/call-with-us")}>ارتباط با ما</li>
                 </ul>
             </div>
             <div className=' flex gap-2.5 items-center '>
@@ -66,7 +80,34 @@ export default function Header() {
                 </Button>
                 <Button variant="outline" className='text-white hover:text-white bg-transparent! hover:bg-accent/50! md:text-base  text-xs ' onClick={() => { }} >ورود و افتتاح حساب</Button>
 
-
+                <Drawer direction='right'  >
+                    <DrawerTrigger className='md:hidden' ><Button className='bg-white textb'>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H14M4 18H9" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
+                    </Button></DrawerTrigger>
+                    <DrawerContent >
+                        <DrawerHeader>
+                            <DrawerTitle>ایده آل کوشا</DrawerTitle>
+                            <DrawerDescription>منوی سایت</DrawerDescription>
+                        </DrawerHeader>
+                        <ul className='text-black flex text  flex-col gap-5 px-3 lg:text-base mt-5 '>
+                            <li>معاملات</li>
+                            <Separator className="" />
+                            <li>سامانه‌های آنلاین</li>
+                            <Separator className="" />
+                            <li>آکادمی ایده‌آل</li>
+                            <Separator className="" />
+                            <li>اخبار و رسانه</li>
+                            <Separator className="" />
+                            <DrawerClose asChild>
+                                <li onClick={() => router.push("/about-us")}>درباره ما</li>
+                            </DrawerClose>
+                            <Separator className="" />
+                            <DrawerClose asChild>
+                                <li onClick={() => router.push("/call-with-us")}>ارتباط با ما</li>
+                            </DrawerClose>
+                        </ul>
+                    </DrawerContent>
+                </Drawer>
             </div>
 
         </header>
