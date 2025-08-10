@@ -5,6 +5,7 @@ import call from '@/assets/images/call.png'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { Button } from "@/components/ui/button";
 
 export default function CallWithUs() {
 
@@ -19,7 +20,7 @@ export default function CallWithUs() {
             </div>
 
             <div className="  border-t border-b border-koosha-pr flex justify-center items-center px-[13svw]  ">
-                <div className=" h-full  flex w-full items-center flex-col gap-5 py-6  ">
+                <div className=" h-full  flex w-full items-center flex-col gap-5 md:py-6 py-[40svw]  ">
                     <div className="flex gap-2 items-center   justify-between w-[90svw] md:w-[30svw]">
                         <Image src={map} alt="" className="w-[2svw]" />
 
@@ -59,7 +60,7 @@ export default function CallWithUs() {
                 <div className=" h-full  flex w-full">
                 </div>
             </div>
-            <div className="px-[20svw] py-[2svw] grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="px-[5svw] md:px-[20svw] py-[10svh] grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="grid w-full items-center gap-3">
                     <Label htmlFor="name">نام</Label>
                     <Input type="name" id="name" placeholder="نام" />
@@ -75,6 +76,9 @@ export default function CallWithUs() {
                 <div className="grid w-full gap-3 md:col-span-2">
                     <Label htmlFor="message">توضیحات</Label>
                     <Textarea placeholder="توضیحات" id="message" className="w-full" />
+                </div>
+                <div className="grid w-full gap-3 md:col-span-2">
+                    <Button variant={"outline"}>ثبت</Button>
                 </div>
             </div>
             <div className="  py-[20svh] bg-koosha-pr flex flex-col justify-center items-center px-[13svw] gap-6 ">

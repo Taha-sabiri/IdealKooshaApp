@@ -33,7 +33,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
-            <div className=" grid grid-cols-1 md:grid-cols-3 gap-20 px-[13svw] py-[5svh]  md:h-[80svh] h-[150svh]">
+            <div className=" grid grid-cols-1 md:grid-cols-3 gap-20 px-[13svw] py-[5svh]  md:h-[80svh] h-[200svh]">
 
                 <div className="flex flex-col">
                     <div className=' w-full h-full  relative  '>
