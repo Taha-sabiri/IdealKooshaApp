@@ -3,6 +3,7 @@ import "../globals.css";
 import localFont from 'next/font/local'
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import Head from "next/head";
 
 
 const abbar = localFont({
@@ -44,12 +45,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
+      <Head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="apple-touch-icon" href="assets/images/logo.png" />
+      </Head>
       <body
         className={`${abbar.variable} font-sans`}
       >
         <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
