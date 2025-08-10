@@ -46,9 +46,9 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <Head>
-        <link rel="manifest" href="../../../public/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
-        <link rel="apple-touch-icon" href="../.././../assets/images/logo.png" />
+
       </Head>
       <body
         className={`${abbar.variable} font-sans`}

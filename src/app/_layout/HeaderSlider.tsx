@@ -43,7 +43,7 @@ export const HeaderSlider = () => {
 
 
 
-            <SwiperSlide className='bg-red-400 w-full h-full'>
+            <SwiperSlide className='bg-koosha-pr w-full h-full'>
                 <Image
                     src={slider}
                     alt="Sample Image"
@@ -56,7 +56,7 @@ export const HeaderSlider = () => {
                     className='object-cover block md:hidden  ' />
             </SwiperSlide>
 
-            <SwiperSlide className='bg-red-400 w-full h-full'>
+            <SwiperSlide className='bg-koosha-prw-full h-full'>
                 <Image
                     src={slider2}
                     alt="Sample Image"
